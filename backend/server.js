@@ -1,20 +1,11 @@
-import express from "express"
-import dotenv from "dotenv"
-import cors from "cors"
-import connectDB from "./config/connect.js"
+import http from "http"
+import app from "./app.js"
 
-dotenv.config()
-connectDB();
-const app=express()
 
-const PORT=process.env.PORT || 5000
 
-app.use(cors())
-app.use(express.json())    
+const PORT=process.env.PORT || 3000
 
-app.get("/", (req,res)=>{
-    res.send("Server is running")
-})
-app.listen(PORT, ()=>{
+const server=http.createServer(app)
+server.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`)
 })
