@@ -1,0 +1,5 @@
+/* Inside your App.css or index.css file */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
