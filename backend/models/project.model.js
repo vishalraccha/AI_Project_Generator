@@ -14,7 +14,7 @@ const projectSchema = new mongoose.Schema({
   },
   tech_stack:{
     type: String,
-    enum: ['Mern Stack', 'Java Spring boot '],
+    enum: ['Mern Stack', 'Java Spring Boot'],
     required: true,
   }
 })

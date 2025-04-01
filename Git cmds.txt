@@ -1,0 +1,6 @@
+function git-daily {
+    Set-Location D:\PROJECTS\AI_Project_Generator
+    git add .
+    git commit -m "Daily update"
+    git push -u origin main
+}
